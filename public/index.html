@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMTP Relay O365 – Monitoring</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">SMTP Relay O365</div>
+    <nav class="nav">
+      <a href="#/" data-link>Dashboard</a>
+      <a href="#/emails" data-link>Emails</a>
+      <a href="#/config" data-link>Configuration</a>
+      <a href="#/logs" data-link>Logs Système</a>
+      <a class="right muted" target="_blank" href="/api/status">API</a>
+      <span id="top-status" class="pill small muted" title="Statut SMTP">•••</span>
+      <button id="btn-restart-smtp" class="btn secondary small" title="Redémarrer le serveur SMTP">↻ SMTP</button>
+    </nav>
+  </header>
+  <main id="app" class="container">
+    <noscript>Activez JavaScript pour utiliser l'interface.</noscript>
+  </main>
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" id="modal-close" aria-label="Fermer">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <footer class="footer">© 2025 – SMTP Relay O365 — Interface minimale</footer>
+  <script src="/app.js"></script>
+</body>
+<!-- Interface minimaliste sans framework, basée sur hash routing. -->
+</html>
